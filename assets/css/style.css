@@ -1,0 +1,35 @@
+body {
+    background-image: url(../images/pawPrint.webp);
+    background-repeat: repeat;
+    height: 100%;
+    color:#60350B;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+hr {
+    border-color: #60350B;
+}
+
+#puppyHead {
+    background-image: url(../images/puppy.png);
+    background-repeat: no-repeat;
+    background-size: 30%;
+    text-align: right;
+    border-bottom: 2px solid #60350B;
+}
+
+#timerDiv {
+    border: 10px solid #60350B;
+    background-color: #D4C3BA;
+    margin: 30px auto;
+    width: 200px;
+    text-align: center;
+}
+
+#questions {
+    border: 5px solid #60350B;
+    background-color: #D4C3BA;
+    text-align: left;
+    padding: 30px;
+    margin: auto 150px 80px 150px;
+}

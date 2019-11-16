@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="assets/javascript/app.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  
+  <title>Trivia Game</title>
+</head>
+<body>
+    <div class="jumbotron jumbotron-fluid" id="puppyHead">
+        <div class="container">
+            <h1 class="display-4">Italian Greyhound Trivia</h1>
+            <p class="lead">Gentle, submissive, and affectionate, the Italian Greyhound is a naturally well-behaved dog.</p>
+        </div>
+    </div>
+    <div id="timerDiv">
+        <h1 id="time-left">00:00</h1>
+    </div>
+
+    <div id="questions">
+        <p>Italian Greyhounds use which of their five senses to catch prey? </p>    
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="question1" id="sight" value="option1.1">
+            <label class="form-check-label" for="sight">Sight</label>
+        </div>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="question1" id="smell" value="option1.2">
+            <label class="form-check-label" for="smell">Smell</label>
+        </div>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="question1" id="hearing" value="option1.3">
+            <label class="form-check-label" for="hearing">Hearing</label>
+        </div>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="question1" id="taste" value="option1.4">
+            <label class="form-check-label" for="taste">Taste</label>
+        </div>
+        <hr>
+        <p>How many years have Italian Greyhound's been around? </p>    
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="question2" id="10000" value="option2.1">
+            <label class="form-check-label" for="10000">10,000 + years</label>
+        </div>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="question2" id="4000" value="option2.2">
+            <label class="form-check-label" for="4000">4,000 - 7,000 years</label>
+        </div>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="question2" id="500" value="option2.3">
+            <label class="form-check-label" for="500">500 - 700 years</label>
+        </div>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="question2" id="150" value="option2.4">
+            <label class="form-check-label" for="150">150 - 400 years</label>
+        </div>
+        <hr>
+        <p>What is an Italian Greyhounds favorite activity? </p>    
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="question3" id="sleeping" value="option3.1">
+            <label class="form-check-label" for="sleeping">Sleeping</label>
+        </div>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="question3" id="relaxing" value="option3.2">
+            <label class="form-check-label" for="relaxing">Relaxing</label>
+        </div>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="question3" id="inlineRadio3" value="option3.3">
+            <label class="form-check-label" for="inlineRadio3">Running</label>
+        </div>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="question3" id="chasing" value="option3.4">
+            <label class="form-check-label" for="chasing">Chasing</label>
+        </div>
+        <hr>
+        <p>What are Italian Greyhounds most motivated by? </p>    
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="question4" id="kisses" value="option4.1">
+            <label class="form-check-label" for="kissess">Kisses</label>
+        </div>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="question4" id="aloneTime" value="option4.2">
+            <label class="form-check-label" for="aloneTime">Alone Time</label>
+        </div>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="question4" id="food" value="option4.3">
+            <label class="form-check-label" for="food">Food</label>
+        </div>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="question4" id="blankets" value="option4.4">
+            <label class="form-check-label" for="blankets">Blankets</label>
+        </div>
+        <hr>
+        <p>What is the very best type of dog to own? </p>
+        <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="question5" id="afghan" value="option5.1">
+                <label class="form-check-label" for="afghan">Afghan Hound</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="question5" id="italianG" value="option5.2">
+                <label class="form-check-label" for="italianG">Italian Greyhound</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="question5" id="whippet" value="option5.3">
+                <label class="form-check-label" for="whippet">Whippet</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="question5" id="greyhoud" value="option5.4">
+                <label class="form-check-label" for="greyhound">Greyhound</label>
+            </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+     
+
+</body>
+</html>
